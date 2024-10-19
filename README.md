@@ -29,7 +29,7 @@ Para instalar las herramientas necesarias, ejecuta los siguientes comandos en tu
     sudo apt install make
     ```
 
-## Cómo ejecutar el programa en Visual Studio Code
+## Como ejecutar el programa en Visual Studio Code
 
 ### Compilación
 
@@ -41,6 +41,42 @@ Para instalar las herramientas necesarias, ejecuta los siguientes comandos en tu
 
 1. Abre una terminal integrada en Visual Studio Code.
 2. Ejecuta el programa con el siguiente comando:
+   ```bash
+   ./carrera <distancia> <numero_autos>
+   ```
+
+## Como ejecutar con el Archivo y comando  Make (opcional)
+
+### Compilación
+
+1. Se abre una terminal y se busca la carpeta en donde esta el archivo Makefile.
+2. Se ejecuta el comando `make` para compilar el programa.
+
+### Ejecución
+
+1. Si ya tienes la terminal abierta puedes ejecutar el comando: 
+   
+   ```bash
+   ./carreraMake <distancia> <numero_autos>
+   ```
+
+## Compilación Manual
+
+Si no tienes o no quieres seguir ninguna de las opciones anteriores puedes compilarlo de manera manual.
+
+### Compilación
+
+1. Abre una terminal en la carpeta donde estan los programas.
+2. Ejecuta el comando para compilar el programa:
+
+   ```bash
+   g++ -std=c++11 -pthread carrera.cpp -o carrera
+   ```
+
+## Ejecución
+
+1. Con la misma terminal lo puedes ejecutar, con el comando: 
+
    ```bash
    ./carrera <distancia> <numero_autos>
    ```
